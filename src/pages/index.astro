@@ -1,0 +1,13 @@
+---
+import Lorem from '../components/Lorem.astro';
+import '../components/Test';
+import '../components/Counter';
+import Default from '../layouts/Default.astro';
+---
+
+<Default>
+	<h1>Test app</h1>
+	<my-counter client:load></my-counter>
+	<calc-add num={33}></calc-add>
+	<Lorem />
+</Default>
